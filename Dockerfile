@@ -1,8 +1,11 @@
+#Image de base avec version
 FROM node:6.10.3
 
 # Create app directory
 RUN mkdir -p /usr/src/app
-WORKDIR /usr/src/app
+#pour eviter .... -it....
+WORKDIR /usr/src/app 
+
 
 # Install app dependencies
 COPY package.json /usr/src/app/
